@@ -1,9 +1,9 @@
 <?php
 
-namespace MicroCMS\DAO;
+namespace MicroStore\DAO;
 
 use Doctrine\DBAL\Connection;
-use MicroCMS\Domain\Article;
+use MicroStore\Domain\Article;
 
 class ArticleDAO
 {
