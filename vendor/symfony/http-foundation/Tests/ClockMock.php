@@ -11,29 +11,14 @@
 
 namespace Symfony\Component\HttpFoundation;
 
-function time()
+function time($asFloat = false)
 {
     return Tests\time();
 }
 
 namespace Symfony\Component\HttpFoundation\Tests;
 
-function with_clock_mock($enable = null)
-{
-    static $enabled;
-
-    if (null === $enable) {
-        return $enabled;
-    }
-
-    $enabled = $enable;
-}
-
 function time()
 {
-    if (!with_clock_mock()) {
-        return \time();
-    }
-
     return $_SERVER['REQUEST_TIME'];
 }

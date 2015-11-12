@@ -7,6 +7,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 footer {
   position: absolute;
@@ -17,156 +18,124 @@ footer {
   background-color: #f5f5f5;
 }
 
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+    padding: 0 15px;
+}
+
 #logoNav {
 	max-height: 50px;
 	max-width:100px;
 	margin-top: -7px;
 }
 
-/* #####################################################################
-   #
-   #   Project       : Modal Login with jQuery Effects
-   #   Author        : Rodrigo Amarante (rodrigockamarante)
-   #   Version       : 1.0
-   #   Created       : 07/28/2015
-   #   Last Change   : 08/02/2015
-   #
-   ##################################################################### */
-   
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-
-* {
-    font-family: 'Roboto', sans-serif;
+#footerSentence {
+  padding-top: 20px;
 }
 
-#login-modal .modal-dialog {
-    width: 350px;
+.paveNum {
+	padding-top: 10%;
+	margin: auto;
+	width: 200px;
+	height: 200px;
+}
+.motDePasseTable {
+
+	border-collapse: separate;
+	border-spacing: 2px;
 }
 
-#login-modal input[type=text], input[type=password] {
-	margin-top: 10px;
+.remember {
+	text-align: center;
 }
 
-#div-login-msg,
-#div-lost-msg,
-#div-register-msg {
-    border: 1px solid #dadfe1;
-    height: 30px;
-    line-height: 28px;
-    transition: all ease-in-out 500ms;
+.motDePasseTable tr td {
+
+	border-radius: 7px; 
+	transition: all 0.2s;
+	cursor: pointer;
+	text-align: center;
+
+	background-color: rgba(134, 215, 119, 1.0);
 }
 
-#div-login-msg.success,
-#div-lost-msg.success,
-#div-register-msg.success {
-    border: 1px solid #68c3a3;
-    background-color: #c8f7c5;
+.motDePasseTable tr td:hover
+{
+	background-color: rgba(134, 215, 119, 0.5);
+	cursor: pointer;
+	border-radius: 10px;
 }
 
-#div-login-msg.error,
-#div-lost-msg.error,
-#div-register-msg.error {
-    border: 1px solid #eb575b;
-    background-color: #ffcad1;
-}
-
-#icon-login-msg,
-#icon-lost-msg,
-#icon-register-msg {
-    width: 30px;
-    float: left;
-    line-height: 28px;
+.header-image {
+    display: block;
+    width: 100%;
     text-align: center;
-    background-color: #dadfe1;
-    margin-right: 5px;
-    transition: all ease-in-out 500ms;
+    background: url('http://placehold.it/1900x500') no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-#icon-login-msg.success,
-#icon-lost-msg.success,
-#icon-register-msg.success {
-    background-color: #68c3a3 !important;
+.headline {
+    padding: 120px 0;
 }
 
-#icon-login-msg.error,
-#icon-lost-msg.error,
-#icon-register-msg.error {
-    background-color: #eb575b !important;
+.headline h1 {
+    font-size: 130px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-#img_logo {
-    max-height: 100px;
-    max-width: 100px;
+.headline h2 {
+    font-size: 77px;
+    background: #fff;
+    background: rgba(255,255,255,0.9);
 }
 
-/* #########################################
-   #    override the bootstrap configs     #
-   ######################################### */
-
-.modal-backdrop.in {
-    filter: alpha(opacity=50);
-    opacity: .8;
+.featurette-divider {
+    margin: 80px 0;
 }
 
-.modal-content {
-    background-color: #ececec;
-    border: 1px solid #bdc3c7;
-    border-radius: 0px;
-    outline: 0;
+.featurette {
+    overflow: hidden;
 }
 
-.modal-header {
-    min-height: 16.43px;
-    padding: 15px 15px 15px 15px;
-    border-bottom: 0px;
+.featurette-image.pull-left {
+    margin-right: 40px;
 }
 
-.modal-body {
-    position: relative;
-    padding: 5px 15px 5px 15px;
+.featurette-image.pull-right {
+    margin-left: 40px;
 }
 
-.modal-footer {
-    padding: 15px 15px 15px 15px;
-    text-align: left;
-    border-top: 0px;
+.featurette-heading {
+    font-size: 50px;
 }
 
-.checkbox {
-    margin-bottom: 0px;
+.navBarLogo {
+	max-width:: 150px;
+	margin-top: -7px;
 }
 
-.btn {
-    border-radius: 0px;
+.navbar-brand > img {
+  height: 50px;
+  margin-bottom: 60px;
+  margin-top: -15px;
 }
 
-.btn:focus,
-.btn:active:focus,
-.btn.active:focus,
-.btn.focus,
-.btn:active.focus,
-.btn.active.focus {
-    outline: none;
+#logoHome {
+  margin-bottom: -120px;
 }
 
-.btn-lg, .btn-group-lg>.btn {
-    border-radius: 0px;
-}
-
-.btn-link {
-    padding: 5px 10px 0px 0px;
-    color: #95a5a6;
-}
-
-.btn-link:hover, .btn-link:focus {
-    color: #2c3e50;
-    text-decoration: none;
-}
-
-.glyphicon {
-    top: 0px;
-}
-
-.form-control {
-  border-radius: 0px;
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

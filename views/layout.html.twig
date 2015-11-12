@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			{% block pageTitle %}
+				Le Fruit, le Béret, la Cocarde
+			{% endblock %}
+		</title>
+		{% block pageHeaders %}
+		<link rel="stylesheet" href="./microstore.css"/>
+		<link rel="stylesheet" type="text/css" href="twitter-bootstrap/css/bootstrap.css">
+		<link rel="shortcut icon" href="pics/LogoC.ico">
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<script type="text/javascript" src="twitter-bootstrap/js/bootstrap.js"></script>
+		{% endblock %}
+	</head>
+	<body>
+		{% block navBar %}
+			{% include 'defaultNav.html.twig' %}
+		{% endblock %}
+		<div class="container">
+			{% block pageContent %}
+				<img class="img-responsive center-block" id="logoHome" src="pics/logo.png">
+				<hr class="featurette-divider">
+				<!-- First Featurette -->
+				<div class="featurette" id="about">
+					<img class="featurette-image img-circle img-responsive pull-right" src="pics/pomme.jpg">
+					<h2 class="featurette-heading">Un Label Reconnu
+					<span class="text-muted">Gage De Qualité</span>
+					</h2>
+					<p class="lead">Le fruit, Le béret et la cocarde, une entreprise ingénieuse et amibitieuse qui vous propose une sélection de fruits tout récemment sorti de terre et cultivé par nos agriculteurs français.</p>
+				</div>
+				<hr class="featurette-divider">
+				<!-- Second Featurette -->
+				<div class="featurette" id="services">
+					<img class="featurette-image img-circle img-responsive pull-left" src="pics/poire.jpg">
+					<h2 class="featurette-heading">Un Label Reconnu
+					<span class="text-muted">Gage De Qualité</span>
+					</h2>
+					<p class="lead">La représentation de la France tient une place particulière au sein de l’entreprise. Nous revendiquons des produits “Made In France”, gage de qualité absolue et de soutien à nos agriculteurs locaux.</p>
+				</div>
+				<hr class="featurette-divider">
+				<!-- Third Featurette -->
+				<div class="featurette" id="contact">
+					<img class="featurette-image img-circle img-responsive pull-right" src="pics/abricot.jpg">
+					<h2 class="featurette-heading">Un Label Reconnu
+					<span class="text-muted">Gage De Qualité</span>
+					</h2>
+					<p class="lead">Le fruit, le béret et la cocarde montre aussi un immense potentiel dans la livraison de nos produits à domicile, comme n’importe quelle autre denrée. Les fruits sont “réservés” directement sur Internet, puis nous nous mettons en contact avec l’agriculteur le plus proche de chez vous qui cueillera le fruit pour ensuite être livré chez vous sous 2 jours ouvrés !</p>
+				</div>
+				<hr class="featurette-divider">
+				Je marque n'importe quoi dans mon <kbd>index.html.twig</kbd>...
+				<var>y</var> = <var>m</var><var>x</var> + <var>b</var>
+			{% endblock %}			
+		</div>
+		<br/>
+		<div id="table">
+		</div>
+		<footer class="footer">
+			<div class="container">
+				<p id="footerSentence" class="text-center">Site encore en développement.</p>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+
+

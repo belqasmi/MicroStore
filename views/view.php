@@ -2,17 +2,18 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link href="./microcms.css" rel="stylesheet" />
-    <title>MicroCMS - Home</title>
+    <link href="../web/microstore.css" rel="stylesheet" />
+    <title>MicroStore - Home</title>
 </head>
 <body>
 <header>
-    <h1>MicroCMS itération 1</h1>
+    <h1>MicroStore</h1>
 </header>
-<?php foreach ($articles as $article): ?>
+<?php
+foreach ($article as $article): ?>   <!-- foreach = pour chaques tuples successivement   -->
     <article>
-        <h2><?php echo $article->getTitle() ?></h2>
-        <p><?php echo $article->getContent() ?></p>
+        <h2><?php echo $article['art_title'] ?></h2>
+        <p><?php echo $article['art_content'] ?></p>
     </article>
 <?php endforeach ?>
 <footer class="footer">
