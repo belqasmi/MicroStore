@@ -6,7 +6,7 @@ Le Fruit, le Béret, la Cocarde (FBC)
 Thème :
 Le thème du projet se portera sur la vente de fruits à domicile dès la récolte “Made in France”..
 
-Chef de projet : Belqasmi Adam :
+Chef de projet : Belqasmi Adam (30/09/15) :
 
 Le 30/09/15
 
